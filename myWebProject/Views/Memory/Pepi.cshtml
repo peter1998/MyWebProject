@@ -1,0 +1,23 @@
+﻿@model List<int>
+@{
+    ViewData["Title"] = "Pepi";
+}
+
+<h1 style="color:aqua">Pepi</h1>
+
+
+
+<img src="http://www.cray.com/blog/wp-content/uploads/2017/10/Program-Supercomputer.jpg" width="450" height="300" alt="Alternate Text" />
+
+
+
+@for (int i = 0; i < Model.Count; i++)
+{
+    <li>    @Model[i]</li>
+}
+
+
+    <form method="post">
+        <input type="number" name="total" />
+        <input type="submit"  />
+    </form>
